@@ -25,3 +25,12 @@ class SearchSuggestionSystem {
         return result;
     }
 }
+
+const products = ["mobile", "mouse", "moneypot", "monitor", "mousepad"];
+const searchWord = "mouse";
+
+const sss = new SearchSuggestionSystem(products);
+const suggestions = sss.getSuggestions(searchWord);
+
+console.log(suggestions);
+
